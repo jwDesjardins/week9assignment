@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechPro Solutions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">TechPro Solutions</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Welcome to TechPro Solutions</h1>
+    <p class="lead">This is the homepage of TechPro Solutions. Explore our professional services and solutions!</p>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Enter Your Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email Please</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://www.erisee.org/wp-content/uploads/2020/07/scott-graham-5fNmWej4tAA-unsplash-1024x683.jpg" alt="Service 1" class="img-fluid">
+          <h3>Service 1</h3>
+          <p>Description of Service 1.</p>
+          <p>Service 1 provides comprehensive IT consulting services for businesses of all sizes. We offer strategic guidance, technology assessment, and implementation support to help your organization achieve its goals.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="data:image/png;base64,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" alt="Service 2" class="img-fluid">
+          <h3>Service 2</h3>
+          <p>Description of Service 2.</p>
+          <p>Service 2 specializes in web development and design. We create modern, responsive websites tailored to your specific needs. Our team of experienced developers ensures high-quality and visually appealing web solutions.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://www.globalitapp.com/wp-content/themes/bb-theme-child/images/software-consulting-cloud-img.jpg" alt="Service 3" class="img-fluid">
+          <h3>Service 3</h3>
+          <p>Description of Service 3.</p>
+          <p>Service 3 offers cloud computing solutions to optimize your business operations. We help you migrate to the cloud, set up scalable infrastructure, and ensure data security. Leverage the power of cloud technology with Service 3.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
